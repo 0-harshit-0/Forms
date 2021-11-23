@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+	box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+  transition: 0.3s linear;
+}
+::selection {
+  color: white;
+  background: grey;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+body{
+	margin: 0px;
+}
+
+.wrap{
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+
+  height: 100vh;
+  background: #ebd8d9;
+  overflow: scroll;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+
+  width: 640px;
+  max-width: 90vw;
+  height: 100%;
+}
+.section{
+  display: flex;
+
+  margin: 1% 0;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 3%;
+  background: white;
+}
+.plain{
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 130px;
+}
+
+.radioInpCont{
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+}
+.radio{
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 130px;
+}
+
+
+.sheading{
+  margin: 0;
+  font-weight: lighter;
+  font-size: 18px;
+}
+.text{
+  width: 50%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .4);
+}
+.text:focus{
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, .4);
+}
+/* -------------------logo------------------ */
+.logoCont{
+  flex-direction: column;
+  height: 150px;
+  background: url("./bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.logoCont strong{
+  font-size: 32px;
+}
+
+/*-----------------endBtns-------------------*/
+.endBtns{
+  justify-content: space-between;
+
+  background: transparent;
+  padding: 0;
+  margin-top: 2%;
+}
+.endBtns button{
+  padding: 1.2% 3%;
+  border-radius: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.endBtns button:hover{
+  opacity: 1;
+}
+.endBtns button:nth-child(1){
+  color: white;
+  background: #02746b;
+}
+.endBtns button:nth-child(2){
+  color: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, .1);
+}
+
+/* ---------------------footer---------------------- */
+footer{
+  width: 640px;
+  max-width: 90vw;
+  margin-top: 5%;
+}

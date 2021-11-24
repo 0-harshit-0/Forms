@@ -42,7 +42,7 @@
         <em>a movie theater complex with multiple screens within a single complex</em>
       </section>
 
-      <form method="post" action="/save">
+      <form method="post" action="/submit">
         <section class="section plain">
           <h3 class="sheading">Full Name *</h3>
           <input class="text" type="text" name="fn" required="true" placeholder="answer">
@@ -51,20 +51,20 @@
           <h3 class="sheading">Date Of Birth *</h3>
           <input class="text" type="date" name="dob" required="true">
         </section>
-        <section class="dob section radio">
+        <section class="section radio">
           <h3 class="sheading">Gender *</h3>
 
           <div class="radioInpCont">
             <span>
-              <input id="male" type="radio" name="gender" required="true" value="Male">
+              <input id="male" type="radio" name="gen" required="true" value="Male">
               <label for="male">Male</label>
             </span>
             <span>
-              <input id="female" type="radio" name="gender" required="true" value="Female">
+              <input id="female" type="radio" name="gen" required="true" value="Female">
               <label for="female">Female</label>
             </span>
             <span>
-              <input id="other" type="radio" name="gender" required="true" value="Other">
+              <input id="other" type="radio" name="gen" required="true" value="Other">
               <label for="other">Other</label>
             </span>
           </div>

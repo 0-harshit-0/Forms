@@ -44,16 +44,17 @@ body{
   background: white;
   box-shadow: 0 0 0 .5px rgba(0, 0, 0, 0.2);
 }
+.sheading{
+  margin: 0;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+
 .plain{
   flex-direction: column;
   justify-content: space-evenly;
   height: 130px;
-}
-
-.radioInpCont{
-  display: flex;
-  justify-content: flex-start;
-  gap: 5%;
 }
 .radio{
   flex-direction: column;
@@ -62,11 +63,7 @@ body{
 }
 
 
-.sheading{
-  margin: 0;
-  font-weight: lighter;
-  font-size: 18px;
-}
+
 label{
   font-size: 14px;
 }
@@ -96,6 +93,13 @@ label{
 }
 .logoCont strong{
   font-size: 32px;
+}
+
+/*-----------------gender--------------------*/
+.radioInpCont{
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
 }
 
 /*-----------------endBtns-------------------*/
@@ -134,3 +138,4 @@ footer{
   margin-top: 5%;
   text-align: center;
 }
+

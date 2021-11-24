@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+	box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+  transition: 0.3s linear;
+}
+::selection {
+  color: white;
+  background: grey;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+body{
+	margin: 0px;
+}
+
+.wrap{
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+
+  height: 100vh;
+  background: rgba(0, 250, 250, 0.1);
+  overflow-y: scroll;
+  padding-top: 1%;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+
+  width: 600px;
+  max-width: 90vw;
+  height: 100%;
+}
+.section{
+  display: flex;
+
+  margin: 1% 0;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 5%;
+  background: white;
+  box-shadow: 0 0 0 .5px rgba(0, 0, 0, 0.2);
+}
+.sheading{
+  margin: 0;
+  font-size: 28px;
+  font-weight: 555;
+}
+
+
+/* -------------------logo------------------ */
+.logoCont{
+  flex-direction: column;
+  height: 150px;
+  background: url("./bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.logoCont strong{
+  font-size: 32px;
+}
+
+/*--------------------thanks=-------------------*/
+.thanks{
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 120px;
+}

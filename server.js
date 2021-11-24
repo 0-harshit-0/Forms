@@ -24,7 +24,7 @@ app.post("/submit", (req, res)=> {
 		var myobj = { name: req.body.fn, dob: req.body.dob, gender: req.body.gen };
 		await collection.insertOne(myobj, function(err, res) {
 			if (err) throw err;
-			console.log("1 document inserted");
+			//console.log("1 document inserted");
 			client.close();
 		});
 	});

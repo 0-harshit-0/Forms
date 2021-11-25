@@ -7,27 +7,29 @@ const collection = client.db("mydb").collection("temp");
 
 app.use(express.urlencoded({
   extended: true
-}))
-app.use(express.static("src"));
+}));
 app.use(express.static("assets"));
+app.use(express.static("src"));
+app.use(express.static("submit/src"));
+
 
 app.get("/", (req, res)=> {
-	res.sendFile(__dirname+"/views/index.html");
+	res.sendFile(__dirname+"/views/");
 });
 
 app.post("/submit", (req, res)=> {
 	//console.log(req.body)
-	res.sendFile(__dirname+"/views/submit.html");
+	res.sendFile(__dirname+"/submit/");
 
 	//+++mongo_here+++
-	client.connect(async err => {
+	/*client.connect(async err => {
 		var myobj = { name: req.body.fn, dob: req.body.dob, gender: req.body.gen };
 		await collection.insertOne(myobj, function(err, res) {
 			if (err) throw err;
 			//console.log("1 document inserted");
 			client.close();
 		});
-	});
+	});*/
 });
 
 app.listen(8080);

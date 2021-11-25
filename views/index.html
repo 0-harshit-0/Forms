@@ -31,6 +31,7 @@
     <script src="https://cdn.jsdelivr.net/gh/0-harshit-0/Utility-HTML5Canvas@master/utility.min.js" defer="true"></script>
 
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./tool.css">
     <script type="text/javascript" src="./script.js" defer="true"></script>
 </head>
 <body>
@@ -43,19 +44,43 @@
       </section>
 
       <form method="post" action="/submit">
-
+        <datalist class="tools" id="browsers">
+          <option value="button">
+          <option value="checkbox">
+          <option value="color">
+          <option value="date">
+          <option value="datetime-local">
+          <option value="email">
+          <option value="file">
+          <option value="hidden">
+          <option value="image">
+          <option value="month">
+          <option value="number">
+          <option value="password">
+          <option value="radio">
+          <option value="range">
+          <option value="reset">
+          <option value="search">
+          <option value="submit">
+          <option value="tel">
+          <option value="text">
+          <option value="time">
+          <option value="url">
+          <option value="week">
+        </datalist>
         <section class="section plain">
-          <h3 class="sheading">Full Name *</h3>
+          <h3 class="sheading">Full Name</h3>
           <input class="text" type="text" name="fn" required="true" placeholder="answer">
+          <input class="tools inputTool" list="browsers">
         </section>
 
         <section class="section plain">
-          <h3 class="sheading">Date Of Birth *</h3>
+          <h3 class="sheading">Date Of Birth</h3>
           <input class="text" type="date" name="dob" required="true">
         </section>
 
         <section class="section radio">
-          <h3 class="sheading">Gender *</h3>
+          <h3 class="sheading">Gender</h3>
 
           <div class="radioInpCont">
             <span>

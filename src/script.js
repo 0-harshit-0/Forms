@@ -1,5 +1,5 @@
 window.onload = () => {
-	document.querySelectorAll("*").forEach(z=> {
+	document.querySelectorAll(".wrap *").forEach(z=> {
 		z.setAttribute("contenteditable", "true");
 	});
 }

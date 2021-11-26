@@ -1,3 +1,67 @@
-.tools{
-	position: absolute;
+/*-----------------CreateBtns-------------------*/
+.CreateBtns{
+  justify-content: center;
+  padding: 2% 0;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+/* ----------------createMenu---------------- */
+.createMenu{
+	display: none;
+	justify-content: space-between;
+
+	z-index: 55;
+	border-radius: 10px;
+	background: white;
+	width: 1200px;
+  	max-width: 90vw;
+  	height: 100%;
+	position: fixed;
+	top: 1%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/*------------------menuBtnCont-----------------*/
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 45%;
+	padding: 2%;
+}
+.menu .menuBtnCont{
+	display: flex;
+	justify-content: space-between;
+}
+.menuBtnCont button{
+	padding: 10px 20px;
+	border-radius: 5px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	opacity: 0.7;
+}
+.menuBtnCont button:hover{
+  opacity: 1;
+}
+.menuBtnCont button:nth-child(1){
+	color: white;
+	background: #02746bc5;
+}
+.menuBtnCont button:nth-child(2){
+	color: white;
+	background: rgba(250, 0, 0, .7);
+}
+
+/*---------------------previewWindow-----------------*/
+.previewWindow{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 54%;
+	padding: 2%;
+	outline: solid;
 }

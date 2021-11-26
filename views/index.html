@@ -38,6 +38,22 @@
 </head>
 <body>
 
+  <div class="tools createMenu">
+    <div class="menu">
+      <section>
+        <label class="sheading">height: </label>
+        <input type="number" placeholder="height in px">
+      </section>
+      <section class="tools menuBtnCont">
+        <button type="button">Create</button>
+        <button type="button">Discard</button>
+      </section>
+    </div>
+    <div class="previewWindow">
+      
+    </div>
+  </div>
+
   <div class="wrap">
     <div class="content">
       <section class="logoCont section">
@@ -46,34 +62,9 @@
       </section>
 
       <form method="post" action="/submit">
-        <datalist class="tools" id="browsers">
-          <option value="button">
-          <option value="checkbox">
-          <option value="color">
-          <option value="date">
-          <option value="datetime-local">
-          <option value="email">
-          <option value="file">
-          <option value="hidden">
-          <option value="image">
-          <option value="month">
-          <option value="number">
-          <option value="password">
-          <option value="radio">
-          <option value="range">
-          <option value="reset">
-          <option value="search">
-          <option value="submit">
-          <option value="tel">
-          <option value="text">
-          <option value="time">
-          <option value="url">
-          <option value="week">
-        </datalist>
         <section class="section plain">
           <h3 class="sheading">Full Name</h3>
           <input class="text" type="text" name="fn" required="true" placeholder="answer">
-          <input class="tools inputTool" list="browsers">
         </section>
 
         <section class="section plain">
@@ -99,10 +90,13 @@
             </span>
           </div>
         </section>
-        
         <section class="endBtns section">
           <button class="btns" type="submit">Submit</button>
           <button class="btns" type="button">Clear</button>
+        </section>
+
+        <section class="CreateBtns section">
+          Create section +
         </section>
       </form>
     </div>
@@ -113,3 +107,34 @@
 
 </body>
 </html>
+
+
+
+<!-- 
+
+<input class="tools inputTool" list="browsers">
+          <datalist class="tools" id="browsers">
+            <option value="button">
+            <option value="checkbox">
+            <option value="color">
+            <option value="date">
+            <option value="datetime-local">
+            <option value="email">
+            <option value="file">
+            <option value="hidden">
+            <option value="image">
+            <option value="month">
+            <option value="number">
+            <option value="password">
+            <option value="radio">
+            <option value="range">
+            <option value="reset">
+            <option value="search">
+            <option value="submit">
+            <option value="tel">
+            <option value="text">
+            <option value="time">
+            <option value="url">
+            <option value="week">
+          </datalist>
+ -->

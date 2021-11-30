@@ -35,6 +35,8 @@ body{
 }
 .section{
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
   position: relative;
   margin: 1% 0;
@@ -52,13 +54,9 @@ body{
 
 
 .plain{
-  flex-direction: column;
-  justify-content: space-evenly;
   height: 130px;
 }
 .radio{
-  flex-direction: column;
-  justify-content: space-evenly;
   height: 130px;
 }
 
@@ -83,7 +81,6 @@ label{
 }
 /* -------------------logo------------------ */
 .logoCont{
-  flex-direction: column;
   height: 170px;
   background: url("./bg.jpg");
   background-size: 100% 100%;
@@ -106,6 +103,7 @@ label{
 
 /*-----------------endBtns-------------------*/
 .endBtns{
+  flex-direction: row;
   justify-content: space-between;
 
   background: transparent;

@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./tool.css">
 </head>
 <body>
-
+  <!-- ++++++++++++++create Menu+++++++++++++ -->
   <div class="tools createMenu">
     <div class="menu">
       <section class="heightInpCont">
@@ -54,6 +54,8 @@
     </div>
   </div>
 
+  <!-- ====================main form==================== -->
+
   <div class="wrap">
     <div class="content">
       <section class="logoCont section">
@@ -62,6 +64,7 @@
       </section>
 
       <form method="post" action="/submit">
+
         <section class="section plain">
           <h3 class="sheading">Full Name</h3>
           <input class="text" type="text" name="fn" required="true" placeholder="answer">
@@ -74,7 +77,6 @@
 
         <section class="section radio">
           <h3 class="sheading">Gender</h3>
-
           <div class="radioInpCont">
             <span>
               <input id="male" type="radio" name="gen" required="true" value="Male">
@@ -90,6 +92,7 @@
             </span>
           </div>
         </section>
+        
         <section class="endBtns section">
           <button class="btns" type="submit">Submit</button>
           <button class="btns" type="button">Clear</button>

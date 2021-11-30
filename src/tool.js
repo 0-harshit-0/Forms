@@ -3,39 +3,52 @@ function clearTools() {
 		z.remove();
 	});
 }
-var pw = document.querySelector(".previewWindow");
-var sec = document.createElement("section");
-var h3 = document.createElement("h3");
-var inp = document.createElement("input");
 
+
+function menuDis(dis="none") {
+	document.querySelector(".createMenu").style.display = dis;
+}
 document.querySelector(".CreateBtns").onclick = () => {
-	document.querySelector(".createMenu").style.display = "flex";
+	menuDis("flex");
+}
+document.querySelectorAll(".menuBtnCont button")[0].onclick = () => {
+	menuDis();
 }
 document.querySelectorAll(".menuBtnCont button")[1].onclick = () => {
-	document.querySelector(".createMenu").style.display = "none";
+	menuDis();
 }
 
 function toolChange() {
 	let heightInput = document.querySelector(".heightInpCont input");
-	heightInput.addEventListener("change", (e) => {
-		console.log(heightInput.value)
+	heightInput.addEventListener("keyup", (e) => {
+		//console.log(heightInput.value)
 		create(heightInput.value);
 	});
 }
-function create(h=150) {
-	console.log(h)
-	sec.setAttribute("class", "section");
-	h3.setAttribute("class", "sheading");
-	h3.innerText = "Full Name";
-	inp.setAttribute("class", "text");
-	inp.setAttribute("required", "true");
-	inp.setAttribute("placeholder", "anser");
-	inp.type = "text";
-	inp.name = "fn";
+create = (() => {
+	let pw = document.querySelector(".previewWindow");
+	let sec = document.createElement("section");
+	let h3 = document.createElement("h3");
+	let inp = document.createElement("input");
 
-	sec.appendChild(h3);
-	sec.appendChild(inp);
-	sec.style.height = `${h}px`;
-	pw.appendChild(sec);
-}
-toolChange();
+	return function (h=150, mycallback) {
+		//console.log(h)
+		sec.setAttribute("class", "section");
+		h3.setAttribute("class", "sheading");
+		h3.setAttribute("contenteditable", "true");
+		h3.innerText = "Full Name";
+		inp.setAttribute("class", "text");
+		inp.setAttribute("required", "true");
+		inp.setAttribute("placeholder", "answer");
+		inp.type = "text";
+		inp.name = "fn";
+
+		sec.appendChild(h3);
+		sec.appendChild(inp);
+		sec.style.height = `${h}px`;
+		pw.appendChild(sec);
+
+		if(mycallback) mycallback();
+	}
+})();
+create(h=150, toolChange);
